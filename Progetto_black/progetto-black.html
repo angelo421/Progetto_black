@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- inizializzazione bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Icons font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- pagina CSS  -->
+  <link rel="stylesheet" href="./black-style.css">
+</head>
+<body class="bg-black">
+  <!-- inizio navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-black nav-custom" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-solid icon-moon fa-moon" style="color: #ffffff;"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Link1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- fine navbar e inizio header  -->
+  <header>
+    <div class="container-fluid custom-bg-moon">
+      <div class="row h-100" >
+          <div class="col-12 col-md-4 custom-title mx-0">
+            <h1>Lorem Ipsum</h1>
+            <p class="p-custom">Lorem ipsum dolor, sit amet consectetur.</p>
+          </div>
+          <div class="col-12 col-md-4 mx-0 d-flex flex-column justify-content-end align-items-center ">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-chevron-down fa-2xl arrow"></i>
+            </button>
+          </div>
+          <div class="col-12 col-md-4 mx-0">
+
+          </div>
+          
+      </div> 
+    </div>
+    <!-- inizio offcanvas -->
+    <div class="bg-black">
+      <div class="offcanvas position-relative bg-black" data-bs-backdrop="static" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+          <button type="button" class="btn-close bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <section class="container-fluid bg-black">
+            <div class="row justify-content-evenly">
+              <div class="col-12 col-md-2 under-number d-flex flex-column align-items-center">
+                <p>Lorem</p>
+                <p class="custom-number">12</p>
+              </div>
+              <div class="col-12 col-md-2 under-number d-flex flex-column align-items-center">
+                <p>Lorem</p>
+                <p class="custom-number">3213</p>
+              </div>
+              <div class="col-12 col-md-2 under-number d-flex flex-column align-items-center">
+                <p>Lorem</p>
+                <p class="custom-number">251</p>
+              </div>
+              <div class="col-12 col-md-2 under-number d-flex flex-column align-items-center">
+                <p>Lorem</p>
+                <p class="custom-number">93</p>
+              </div>     
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- moon2 -->
+    <section>
+    <div class="bg-black">
+      <div class="container-fluid">
+        <div class="row padding-top justify-content-evenly">
+          <div class="col-12 col-md-6 d-flex  justify-content-center flex-column padding-left">
+            <p class="p-moon2">Lorem ipsum</p>
+            <p class="p1-moon2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum tempore illo dolorem quaerat eum vero atque suscipit eligendi dignissimos, quod maxime corrupti cupiditate architecto! Totam ducimus harum nostrum nisi.</p>
+          </div>
+          <div class="col-12 col-md-6 justify-content-center">
+            <img src="./media/moon2.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  </header>
+
+  <main>
+  <!-- sezione icone  -->
+  <div class="container-fluid d-flex justify-content-center mb-5">
+    <div class="row w-100 justify-content-between align-items-center px-5">    
+      <div class="col-12 col-md-3 d-flex flex-column">
+        <div class="border-custom1 d-flex align-items-center justify-content-lg-start justify-content-center">
+          <i class="fa-solid fa-meteor pe-2 fa-xl" style="color: #2b9df4;"></i>
+          <h4 class="text-white">Lorem</h4>
+        </div>
+        <div>
+          <p class="text-white  text-lg-start text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fuga sunt accusamus veritatis labore, aliquid itaque aspernatur modi atque, soluta ex voluptas dolore</p>
+        </div>
+        <div class="border-custom1 d-flex align-items-center justify-content-lg-start justify-content-center">
+          <i class="fa-solid fa-rocket pe-2 fa-xl" style="color: #2b9df4;"></i>
+          <h4 class="text-white">Lorem</h4>
+        </div>
+        <div>
+          <p class="text-white text-lg-start text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fuga sunt accusamus veritatis labore, aliquid itaque aspernatur modi atque, soluta ex voluptas dolore</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 d-flex flex-column custom-column">
+        <div class="border-custom1 d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-sun pe-2 fa-xl" style="color: #2b9df4;"></i>
+          <h4 class="text-white">Lorem</h4>
+        </div>
+        <div>
+          <p class="text-white text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fuga sunt accusamus veritatis labore, aliquid itaque aspernatur modi atque, soluta ex voluptas dolore</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3  d-flex flex-column">
+        <div class="border-custom1 d-flex align-items-center justify-content-lg-end justify-content-center">
+          <i class="fa-solid fa-user-astronaut pe-2 fa-xl" style="color: #2b9df4;"></i>
+          <h4 class="text-white">Lorem</h4>
+        </div>
+        <div>
+          <p class="text-white text-lg-end text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fuga sunt accusamus veritatis labore, aliquid itaque aspernatur modi atque, soluta ex voluptas dolore</p>
+        </div>    
+        <div class="border-custom1 d-flex align-items-center justify-content-lg-end justify-content-center">
+          <i class="fa-solid fa-meteor pe-2 fa-xl" style="color: #2b9df4;"></i>
+          <h4 class="text-white">Lorem</h4>
+        </div>
+        <div>
+          <p class="text-white text-lg-end text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fuga sunt accusamus veritatis labore, aliquid itaque aspernatur modi atque, soluta ex voluptas dolore</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class=" spazio"></div>
+
+  <!-- Skypocket -->
+  
+  <section class="conteiner vh-100 mt-5 ">
+    <div class="row bg-black m-0">
+      <div class="col-12 col-md-5 d-flex flex-column  justify-content-between">
+       
+          <div class="ms-5  ">
+            <h3>Lorem Ipsum Dolor Sit</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam necessitatibus odit nulla saepe impedit ducimus officia praesentium eos repudiandae animi non velit, sapiente, architecto nobis nesciunt tempora vero est quos.</p>
+          </div>
+          <div class="ms-5 ">
+            <h3>Lorem Ipsum Dolor Sit</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam necessitatibus odit nulla saepe impedit ducimus officia praesentium eos repudiandae animi non velit, sapiente, architecto nobis nesciunt tempora vero est quos.</p>
+          </div>
+          <div class="ms-5 ">
+            <h3>Lorem Ipsum Dolor Sit</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam necessitatibus odit nulla saepe impedit ducimus officia praesentium eos repudiandae animi non velit, sapiente, architecto nobis nesciunt tempora vero est quos.</p>
+          </div>
+        
+      </div> 
+      <div class="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center">
+        <img src="media/missile-2027068_1280.png" class="Skypocket img-fluid">
+    </div>
+  </div>
+
+
+
+  </section>
+
+<!-- sezione bottini -->
+
+  <section class="container-fluid bg-black">
+    <div class="row">
+        <div class="col-12 col-lg-5 mx-lg-5 d-flex flex-column align-items-center justify-content-evenly">
+            <div class="mb-5">
+                <h3>Lorem Ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam ex odit ipsam explicabo. Error, dolore fugiat quidem aliquid ipsam excepturi ab mollitia beatae debitis voluptas, tempore quo reiciendis rem!</p>
+                <div class="div-custom ">
+                    <div class="div-to">
+                <a class="go-to" href="">Go to</a>
+            </div>
+            </div>
+            </div>
+            <div class="mb-5">
+                <h3>Lorem Ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam ex odit ipsam explicabo. Error, dolore fugiat quidem aliquid ipsam excepturi ab mollitia beatae debitis voluptas, tempore quo reiciendis rem!</p>
+                <div class="div-custom ">
+                    <div class="div-to">
+                <a class="go-to" href="">Go to</a>
+            </div>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h3>Lorem Ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam ex odit ipsam explicabo. Error, dolore fugiat quidem aliquid ipsam excepturi ab mollitia beatae debitis voluptas, tempore quo reiciendis rem!</p>
+            <div class="div-custom ">
+                <div class="div-to">
+            <a class="go-to" href="">Go to</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-12 col-lg-5 mx-lg-5 d-flex flex-column align-items-center justify-content-evenly">
+            <div class="mb-5">
+                <h3>Lorem Ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam ex odit ipsam explicabo. Error, dolore fugiat quidem aliquid ipsam excepturi ab mollitia beatae debitis voluptas, tempore quo reiciendis rem!</p>
+                <div class="div-custom ">
+                    <div class="div-to">
+                <a class="go-to" href="">Go to</a>
+            </div>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h3>Lorem Ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam ex odit ipsam explicabo. Error, dolore fugiat quidem aliquid ipsam excepturi ab mollitia beatae debitis voluptas, tempore quo reiciendis rem!</p>
+            <div class="div-custom ">
+                <div class="div-to">
+            <a class="go-to" href="">Go to</a>
+        </div>
+        </div>
+    </div >
+    <div class="mb-5">
+        <h3>Lorem Ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam ex odit ipsam explicabo. Error, dolore fugiat quidem aliquid ipsam excepturi ab mollitia beatae debitis voluptas, tempore quo reiciendis rem!</p>
+        <div class="div-custom ">
+            <div class="div-to">
+        <a class="go-to" href="">Go to</a>
+    </div>
+    </div>
+    </div>
+        </div>
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="container-fluid vh-100 bg-black d-flex align-items-end text-white">
+  <div class="row bg-black w-100">
+    <div class="col-12 col-md-6 pe-0">
+      <h3>Lorem</h3> 
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus eius cum explicabo, aliquid veniam ipsam Lorem ipsum dolor sit amet consectetur adipisici, dolore .</p>
+    </div>
+    <div class="col-12 col-md-6 d-flex align-items-center justify-content-between">
+      <i class="fa-brands fa-facebook-f ps-0" style="color: white;"></i>
+      <i class="fa-brands fa-instagram" style="color: white;"></i>
+      <i class="fa-brands fa-linkedin" style="color: white;"></i>
+      <i class="fa-brands fa-twitter" style="color: white;"></i>
+    </div>
+  </div>
+</footer>
+<div class="custom-gradient d-flex justify-content-center">
+  <div class="custom-border"></div>
+</div>
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        </body>
+        </html>
